@@ -1,0 +1,31 @@
+{
+  "name": "eslint-config-pyosh",
+  "author": "pyo-sh <pygosky@gmail.com>",
+  "version": "1.0.1",
+  "description": "pyo-sh's Typescript eslint coding convention rules",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pyo-sh/eslint-config-pyosh.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pyo-sh/eslint-config-pyosh/issues"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "javascript",
+    "es2018"
+  ],
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-prettier": "^4.2.1"
+  },
+  "peerDependencies": {
+    "eslint": "^8.51.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-prettier": "^4.2.1"
+  }
+}
