@@ -3,6 +3,7 @@
   "author": "pyo-sh <pygosky@gmail.com>",
   "version": "1.0.1",
   "description": "pyo-sh's Typescript eslint coding convention rules",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/pyo-sh/eslint-config-pyosh.git"
@@ -19,13 +20,17 @@
     "es2018"
   ],
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
     "eslint": "^8.51.0",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-prettier": "^4.2.1"
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.28.1"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
     "eslint": "^8.51.0",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-prettier": "^4.2.1"
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.28.1"
   }
 }
