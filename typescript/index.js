@@ -11,7 +11,6 @@ module.exports = {
       "jsx": true
     }
   },
-  "files": ["**/*.ts?(x)"],
   "plugins": ["@typescript-eslint"],
   "extends": ["plugin:@typescript-eslint/recommended"],
 
