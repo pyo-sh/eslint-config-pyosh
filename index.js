@@ -1,5 +1,6 @@
 module.exports = {
   extends: [
+    "eslint:recommended",
     "./rules/best-practices",
     "./rules/errors",
     "./rules/node",
@@ -7,7 +8,6 @@ module.exports = {
     "./rules/variables",
     "./rules/es6",
     "./rules/imports",
-    "./rules/typescript",
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 2020,

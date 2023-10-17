@@ -9,7 +9,12 @@ module.exports = {
   "plugins": [
     "import"
   ],
+  "extends": [
+    "plugin:import/typescript",
+    "plugin:import/recommended"
+  ],
   "settings": {
+    "import/external-module-folders": ["node_modules", ".yarn"],
     "import/resolver": {
       "node": {
         "extensions": [".mjs", ".js", ".json"]
