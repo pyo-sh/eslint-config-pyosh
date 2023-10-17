@@ -14,7 +14,6 @@ module.exports = {
     "plugin:import/recommended"
   ],
   "settings": {
-    "import/external-module-folders": ["node_modules", ".yarn"],
     "import/resolver": {
       "node": {
         "extensions": [".mjs", ".js", ".json"]
