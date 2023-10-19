@@ -36,3 +36,46 @@ or
 ```
 yarn --dev eslint-config-pyosh
 ```
+
+## Usage
+
+### eslint-config-pyosh
+
+Rule about javascript, but it does not have babel setting.
+if you want only javascript rule setting, should set eslint babel
+
+> - eslint
+> - eslint-plugin-import
+
+```javascript
+module.exports = {
+  extends: ["eslint-config-pyosh"],
+};
+```
+
+### eslint-config-pyosh/typescript
+
+> - @typescript-eslint/eslint-plugin
+> - @typescript-eslint/parser
+> - eslint-import-resolver-typescript
+
+```javascript
+module.exports = {
+  extends: ["eslint-config-pyosh", "eslint-config-pyosh/typescript"],
+};
+```
+
+### eslint-config-pyosh/prettier
+
+> - eslint-config-prettier
+> - eslint-plugin-prettier
+
+```javascript
+module.exports = {
+  extends: [
+    "eslint-config-pyosh",
+    "eslint-config-pyosh/typescript",
+    "eslint-config-pyosh/prettier",
+  ],
+};
+```
