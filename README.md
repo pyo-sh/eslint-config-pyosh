@@ -53,6 +53,16 @@ module.exports = {
 };
 ```
 
+- CAUTION: if you are using `sourceType: module`, you should add it in you config file
+
+```javascript
+module.exports = {
+  parserOptions: {
+    sourceType: "module",
+  },
+};
+```
+
 ### eslint-config-pyosh/typescript
 
 > - @typescript-eslint/eslint-plugin
