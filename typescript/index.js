@@ -5,11 +5,7 @@ module.exports = {
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
-    "sourceType": "module",
     "project": ["./tsconfig.json"],
-    "ecmaFeatures": {
-      "jsx": true
-    }
   },
   "plugins": ["@typescript-eslint"],
   "extends": ["plugin:@typescript-eslint/recommended"],
