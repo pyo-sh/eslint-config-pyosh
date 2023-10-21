@@ -75,6 +75,26 @@ module.exports = {
 };
 ```
 
+- CAUTION: if you are using `sourceType: module`, you should add it in you config file
+
+```javascript
+module.exports = {
+  parserOptions: {
+    sourceType: "module",
+  },
+  settings: {
+    "import/resolver": {
+      typescript: {
+        // if you have another tsconfig file, you should change it
+        // if not, you don't have to write it
+        project: ["./tsconfig.json"],
+        sourceType: "module",
+      },
+    },
+  },
+};
+```
+
 ### eslint-config-pyosh/prettier
 
 > - eslint-config-prettier
