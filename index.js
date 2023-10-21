@@ -9,7 +9,7 @@ module.exports = {
     "./rules/imports",
   ].map(require.resolve),
   parserOptions: {
-    ecmaVersion: latest,
+    ecmaVersion: "latest",
   },
   rules: {},
 };
