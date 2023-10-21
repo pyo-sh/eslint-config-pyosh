@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-pyosh",
   "author": "pyo-sh <pygosky@gmail.com>",
-  "version": "3.1.4",
+  "version": "3.1.5",
   "description": "pyo-sh's Typescript eslint coding convention rules",
   "main": "index.js",
   "homepage": "https://github.com/pyo-sh/eslint-config-pyosh",
