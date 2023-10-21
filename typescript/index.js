@@ -7,7 +7,7 @@ module.exports = {
     "ecmaVersion": "latest",
     "project": ["./tsconfig.json"],
   },
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "import"],
   "extends": [
     "plugin:@typescript-eslint/recommended",
     "plugin:import/typescript"
