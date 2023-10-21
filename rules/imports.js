@@ -14,19 +14,17 @@ module.exports = {
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [".mjs", ".js", ".json", ".ts", ".tsx"]
+        "extensions": [".mjs", ".js", ".json"]
       }
     },
     "import/extensions": [
       ".js",
       ".mjs",
-      ".jsx",
-      ".ts",
-      ".tsx"
+      ".jsx"
     ],
     "import/ignore": [
       "node_modules",
-      "\\.(coffee|scss|css|less|hbs|svg|json)$",
+      "\\.(coffee|scss|css|less|hbs|svg|json)$"
     ],
   },
 
