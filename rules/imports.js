@@ -6,10 +6,9 @@ module.exports = {
     "ecmaVersion": 12,
   },
   "plugins": [
-    "import"
+    "import", "plugin:import/typescript"
   ],
   "extends": [
-    "plugin:import/typescript",
     "plugin:import/recommended"
   ],
   "settings": {
