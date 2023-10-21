@@ -11,12 +11,14 @@ module.exports = {
   "extends": [
     "plugin:@typescript-eslint/recommended",
     "plugin:import/typescript",
-    "plugin:import/recommended"
   ],
   "settings": {
     "import/resolver": {
       "node": {
         "extensions": [".mjs", ".js", ".json", ".ts", ".tsx"]
+      },
+      "typescript": {
+        "project": ["./tsconfig.json"],
       }
     },
     "import/extensions": [
