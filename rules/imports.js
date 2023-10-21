@@ -154,7 +154,7 @@ module.exports = {
     "import/no-self-import": "error",
 
     // https://github.com/import-js/eslint-plugin-import/blob/d81f48a2506182738409805f5272eff4d77c9348/docs/rules/no-cycle.md
-    "import/no-cycle": ["error", { "maxDepth": "∞" }],
+    "import/no-cycle": ["off", { "maxDepth": "∞" }],
 
     // https://github.com/import-js/eslint-plugin-import/blob/ebafcbf59ec9f653b2ac2a0156ca3bcba0a7cf57/docs/rules/no-useless-path-segments.md
     "import/no-useless-path-segments": ["error", { "commonjs": true }],
