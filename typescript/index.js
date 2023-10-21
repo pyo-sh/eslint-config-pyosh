@@ -9,19 +9,6 @@ module.exports = {
   },
   "plugins": ["@typescript-eslint"],
   "extends": ["plugin:@typescript-eslint/recommended"],
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "extensions": [".mjs", ".js", ".json", ".ts"]
-      }
-    },
-    "import/extensions": [
-      ".js",
-      ".mjs",
-      ".jsx",
-      ".ts"
-    ],
-  },
 
   "rules": {
     // For more information

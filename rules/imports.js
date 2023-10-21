@@ -16,13 +16,15 @@ module.exports = {
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [".mjs", ".js", ".json"]
+        "extensions": [".mjs", ".js", ".json", ".ts", ".tsx"]
       }
     },
     "import/extensions": [
       ".js",
       ".mjs",
       ".jsx",
+      ".ts",
+      ".tsx"
     ],
     "import/ignore": [
       "node_modules",
