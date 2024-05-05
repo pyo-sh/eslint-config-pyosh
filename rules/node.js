@@ -1,9 +1,9 @@
 module.exports = {
-  "env": {
-    "node": true
+  env: {
+    node: true,
   },
 
-  "rules": {
+  rules: {
     // https://eslint.org/docs/latest/rules/callback-return
     "callback-return": "off",
 
@@ -36,5 +36,5 @@ module.exports = {
 
     // https://eslint.org/docs/latest/rules/no-sync
     "no-sync": "off",
-  }
+  },
 };

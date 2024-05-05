@@ -1,5 +1,5 @@
 module.exports = {
-  "rules": {
+  rules: {
     // https://eslint.org/docs/rules/accessor-pairs
     "accessor-pairs": "off",
 
@@ -10,21 +10,24 @@ module.exports = {
     "block-scoped-var": "error",
 
     // https://eslint.org/docs/rules/complexity
-    "complexity": ["off", 20],
+    complexity: ["off", 20],
 
     // https://eslint.org/docs/rules/class-methods-use-this
-    "class-methods-use-this": ["off", {
-      "exceptMethods": [],
-    }],
+    "class-methods-use-this": [
+      "off",
+      {
+        exceptMethods: [],
+      },
+    ],
 
     // https://eslint.org/docs/rules/consistent-return
     "consistent-return": "off",
 
     // https://eslint.org/docs/rules/curly
-    "curly": ["error", "all"],
+    curly: ["error", "all"],
 
     // https://eslint.org/docs/rules/default-case
-    "default-case": ["error", { "commentPattern": "^no default$" }],
+    "default-case": ["error", { commentPattern: "^no default$" }],
 
     // https://eslint.org/docs/rules/default-case-last
     "default-case-last": "error",
@@ -33,13 +36,13 @@ module.exports = {
     "default-param-last": "error",
 
     // https://eslint.org/docs/rules/dot-notation
-    "dot-notation": ["off", { "allowKeywords": true }],
+    "dot-notation": ["off", { allowKeywords: true }],
 
     // https://eslint.org/docs/rules/dot-location
     "dot-location": ["error", "property"],
 
     // https://eslint.org/docs/rules/eqeqeq
-    "eqeqeq": ["error", "always", { "null": "ignore" }],
+    eqeqeq: ["error", "always", { null: "ignore" }],
 
     // https://eslint.org/docs/rules/grouped-accessor-pairs
     "grouped-accessor-pairs": "error",
@@ -66,13 +69,13 @@ module.exports = {
     "no-div-regex": "off",
 
     // https://eslint.org/docs/rules/no-else-return
-    "no-else-return": ["error", { "allowElseIf": true }],
+    "no-else-return": ["error", { allowElseIf: true }],
 
     // https://eslint.org/docs/rules/no-empty-function
     "no-empty-function": [
       "off",
       {
-        "allow": [
+        allow: [
           "functions",
           "arrowFunctions",
           "generatorFunctions",
@@ -83,8 +86,8 @@ module.exports = {
           "constructors",
           "asyncFunctions",
           "asyncMethods",
-        ]
-      }
+        ],
+      },
     ],
 
     // https://eslint.org/docs/rules/no-empty-pattern
@@ -115,7 +118,7 @@ module.exports = {
     "no-floating-decimal": "error",
 
     // https://eslint.org/docs/rules/no-global-assign
-    "no-global-assign": ["off", { "exceptions": [] }],
+    "no-global-assign": ["off", { exceptions: [] }],
 
     // https://eslint.org/docs/rules/no-native-reassign
     "no-native-reassign": "off",
@@ -136,7 +139,7 @@ module.exports = {
     "no-iterator": "off",
 
     // https://eslint.org/docs/rules/no-labels
-    "no-labels": ["off", { "allowLoop": false, "allowSwitch": false }],
+    "no-labels": ["off", { allowLoop: false, allowSwitch: false }],
 
     // https://eslint.org/docs/rules/no-lone-blocks
     "no-lone-blocks": "off",
@@ -145,17 +148,23 @@ module.exports = {
     "no-loop-func": "off",
 
     // https://eslint.org/docs/rules/no-magic-numbers
-    "no-magic-numbers": ["off", {
-      "ignore": [],
-      "ignoreArrayIndexes": true,
-      "enforceConst": true,
-      "detectObjects": false,
-    }],
+    "no-magic-numbers": [
+      "off",
+      {
+        ignore: [],
+        ignoreArrayIndexes: true,
+        enforceConst: true,
+        detectObjects: false,
+      },
+    ],
 
     // https://eslint.org/docs/rules/no-multi-spaces
-    "no-multi-spaces": ["off", {
-      "ignoreEOLComments": false,
-    }],
+    "no-multi-spaces": [
+      "off",
+      {
+        ignoreEOLComments: false,
+      },
+    ],
 
     // https://eslint.org/docs/rules/no-multi-str
     "no-multi-str": "off",
@@ -179,22 +188,25 @@ module.exports = {
     "no-octal-escape": "error",
 
     // rule: https://eslint.org/docs/rules/no-param-reassign.html
-    "no-param-reassign": ["off", {
-      "props": true,
-      "ignorePropertyModificationsFor": [
-        "acc", // for reduce accumulators
-        "accumulator", // for reduce accumulators
-        "e", // for e.returnvalue
-        "ctx", // for Koa routing
-        "context", // for Koa routing
-        "req", // for Express requests
-        "request", // for Express requests
-        "res", // for Express responses
-        "response", // for Express responses
-        "$scope", // for Angular 1 scopes
-        "staticContext", // for ReactRouter context
-      ]
-    }],
+    "no-param-reassign": [
+      "off",
+      {
+        props: true,
+        ignorePropertyModificationsFor: [
+          "acc", // for reduce accumulators
+          "accumulator", // for reduce accumulators
+          "e", // for e.returnvalue
+          "ctx", // for Koa routing
+          "context", // for Koa routing
+          "req", // for Express requests
+          "request", // for Express requests
+          "res", // for Express responses
+          "response", // for Express responses
+          "$scope", // for Angular 1 scopes
+          "staticContext", // for ReactRouter context
+        ],
+      },
+    ],
 
     // https://eslint.org/docs/rules/no-proto
     "no-proto": "off",
@@ -206,53 +218,53 @@ module.exports = {
     "no-restricted-properties": [
       "error",
       {
-        "object": "arguments",
-        "property": "callee",
-        "message": "arguments.callee is deprecated",
+        object: "arguments",
+        property: "callee",
+        message: "arguments.callee is deprecated",
       },
       {
-        "object": "global",
-        "property": "isFinite",
-        "message": "Please use Number.isFinite instead",
+        object: "global",
+        property: "isFinite",
+        message: "Please use Number.isFinite instead",
       },
       {
-        "object": "self",
-        "property": "isFinite",
-        "message": "Please use Number.isFinite instead",
+        object: "self",
+        property: "isFinite",
+        message: "Please use Number.isFinite instead",
       },
       {
-        "object": "window",
-        "property": "isFinite",
-        "message": "Please use Number.isFinite instead",
+        object: "window",
+        property: "isFinite",
+        message: "Please use Number.isFinite instead",
       },
       {
-        "object": "global",
-        "property": "isNaN",
-        "message": "Please use Number.isNaN instead",
+        object: "global",
+        property: "isNaN",
+        message: "Please use Number.isNaN instead",
       },
       {
-        "object": "self",
-        "property": "isNaN",
-        "message": "Please use Number.isNaN instead",
+        object: "self",
+        property: "isNaN",
+        message: "Please use Number.isNaN instead",
       },
       {
-        "object": "window",
-        "property": "isNaN",
-        "message": "Please use Number.isNaN instead",
+        object: "window",
+        property: "isNaN",
+        message: "Please use Number.isNaN instead",
       },
       {
-        "property": "__defineGetter__",
-        "message": "Please use Object.defineProperty instead.",
+        property: "__defineGetter__",
+        message: "Please use Object.defineProperty instead.",
       },
       {
-        "property": "__defineSetter__",
-        "message": "Please use Object.defineProperty instead.",
+        property: "__defineSetter__",
+        message: "Please use Object.defineProperty instead.",
       },
       {
-        "object": "Math",
-        "property": "pow",
-        "message": "Use the exponentiation operator (**) instead.",
-      }
+        object: "Math",
+        property: "pow",
+        message: "Use the exponentiation operator (**) instead.",
+      },
     ],
 
     // https://eslint.org/docs/rules/no-return-assign
@@ -265,9 +277,12 @@ module.exports = {
     "no-script-url": "error",
 
     // https://eslint.org/docs/rules/no-self-assign
-    "no-self-assign": ["error", {
-      "props": true,
-    }],
+    "no-self-assign": [
+      "error",
+      {
+        props: true,
+      },
+    ],
 
     // https://eslint.org/docs/rules/no-self-compare
     "no-self-compare": "error",
@@ -282,11 +297,14 @@ module.exports = {
     "no-unmodified-loop-condition": "off",
 
     // https://eslint.org/docs/rules/no-unused-expressions
-    "no-unused-expressions": ["off", {
-      "allowShortCircuit": false,
-      "allowTernary": false,
-      "allowTaggedTemplates": false,
-    }],
+    "no-unused-expressions": [
+      "off",
+      {
+        allowShortCircuit: false,
+        allowTernary: false,
+        allowTaggedTemplates: false,
+      },
+    ],
 
     // https://eslint.org/docs/rules/no-unused-labels
     "no-unused-labels": "error",
@@ -313,16 +331,16 @@ module.exports = {
     "no-warning-comments": [
       "warn",
       {
-        "terms": ["TODO", "FIXME", "XXX", "BUG"],
-        "location": "anywhere"
-      }
+        terms: ["TODO", "FIXME", "XXX", "BUG"],
+        location: "anywhere",
+      },
     ],
 
     // https://eslint.org/docs/rules/no-with
     "no-with": "off",
 
     // https://eslint.org/docs/rules/prefer-promise-reject-errors
-    "prefer-promise-reject-errors": ["error", { "allowEmptyReject": true }],
+    "prefer-promise-reject-errors": ["error", { allowEmptyReject: true }],
 
     // https://eslint.org/docs/rules/prefer-named-capture-group
     "prefer-named-capture-group": "off",
@@ -331,12 +349,15 @@ module.exports = {
     "prefer-object-has-own": "off",
 
     // https://eslint.org/docs/rules/prefer-regex-literals
-    "prefer-regex-literals": ["off", {
-      "disallowRedundantWrapping": true,
-    }],
+    "prefer-regex-literals": [
+      "off",
+      {
+        disallowRedundantWrapping: true,
+      },
+    ],
 
     // https://eslint.org/docs/rules/radix
-    "radix": "off",
+    radix: "off",
 
     // https://eslint.org/docs/rules/require-await
     "require-await": "off",
@@ -348,9 +369,9 @@ module.exports = {
     "vars-on-top": "off",
 
     // https://eslint.org/docs/rules/wrap-iife.html
-    "wrap-iife": ["off", "outside", { "functionPrototypeMethods": false }],
+    "wrap-iife": ["off", "outside", { functionPrototypeMethods: false }],
 
     // https://eslint.org/docs/rules/yoda
-    "yoda": "off"
-  }
+    yoda: "off",
+  },
 };

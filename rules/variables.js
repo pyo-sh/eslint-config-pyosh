@@ -1,5 +1,5 @@
 module.exports = {
-  "rules": {
+  rules: {
     // https://eslint.org/docs/latest/rules/init-declarations
     "init-declarations": "off",
 
@@ -28,9 +28,15 @@ module.exports = {
     "no-undefined": "off",
 
     // https://eslint.org/docs/latest/rules/no-unused-vars
-    "no-unused-vars": ["off", { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }],
+    "no-unused-vars": [
+      "off",
+      { vars: "all", args: "after-used", ignoreRestSiblings: true },
+    ],
 
     // https://eslint.org/docs/latest/rules/no-use-before-define
-    "no-use-before-define": ["off", { "functions": true, "classes": true, "variables": true }],
-  }
+    "no-use-before-define": [
+      "off",
+      { functions: true, classes: true, variables: true },
+    ],
+  },
 };

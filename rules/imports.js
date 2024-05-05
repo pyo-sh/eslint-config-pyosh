@@ -1,36 +1,28 @@
 module.exports = {
-  "env": {
-    "node": true
+  env: {
+    node: true,
   },
-  "parserOptions": {
-    "ecmaVersion": 12,
+  parserOptions: {
+    ecmaVersion: 12,
   },
-  "plugins": [
-    "import"
-  ],
-  "extends": [
-    "plugin:import/recommended"
-  ],
-  "settings": {
+  plugins: ["import"],
+  extends: ["plugin:import/recommended"],
+  settings: {
     "import/resolver": {
-      "node": {
-        "extensions": [".mjs", ".js", ".json"]
-      }
+      node: {
+        extensions: [".mjs", ".js", ".json"],
+      },
     },
-    "import/extensions": [
-      ".js",
-      ".mjs",
-      ".jsx"
-    ],
+    "import/extensions": [".js", ".mjs", ".jsx"],
     "import/ignore": [
       "node_modules",
-      "\\.(coffee|scss|css|less|hbs|svg|json)$"
+      "\\.(coffee|scss|css|less|hbs|svg|json)$",
     ],
   },
 
-  "rules": {
+  rules: {
     // https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
-    "import/no-unresolved": ["error", { "commonjs": true, "caseSensitive": true }],
+    "import/no-unresolved": ["error", { commonjs: true, caseSensitive: true }],
 
     // https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/named.md#when-not-to-use-it
     "import/named": "error",
@@ -43,7 +35,7 @@ module.exports = {
 
     // https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/namespace.md
     "import/namespace": "off",
-    
+
     // https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/no-named-as-default.md
     "import/no-named-as-default": "error",
 
@@ -78,31 +70,31 @@ module.exports = {
     "import/order": [
       "error",
       {
-        "groups": ["builtin", "external", ["parent", "sibling"], "index", "type"],
-        "pathGroups": [
+        groups: ["builtin", "external", ["parent", "sibling"], "index", "type"],
+        pathGroups: [
           {
-            "pattern": "{react,react*}",
-            "group": "builtin",
-            "position": "before"
+            pattern: "{react,react*}",
+            group: "builtin",
+            position: "before",
           },
           {
-            "pattern": "{next,next*}",
-            "group": "builtin",
-            "position": "before"
+            pattern: "{next,next*}",
+            group: "builtin",
+            position: "before",
           },
           {
-            "pattern": "express*",
-            "group": "builtin",
-            "position": "before"
-          }
+            pattern: "express*",
+            group: "builtin",
+            position: "before",
+          },
         ],
-        "pathGroupsExcludedImportTypes": ["buildin", "object"],
-        "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": true
+        pathGroupsExcludedImportTypes: ["buildin", "object"],
+        alphabetize: {
+          order: "asc",
+          caseInsensitive: true,
         },
-        "newlines-between": "never"
-      }
+        "newlines-between": "never",
+      },
     ],
 
     // https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md
@@ -154,10 +146,10 @@ module.exports = {
     "import/no-self-import": "error",
 
     // https://github.com/import-js/eslint-plugin-import/blob/d81f48a2506182738409805f5272eff4d77c9348/docs/rules/no-cycle.md
-    "import/no-cycle": ["off", { "maxDepth": "∞" }],
+    "import/no-cycle": ["off", { maxDepth: "∞" }],
 
     // https://github.com/import-js/eslint-plugin-import/blob/ebafcbf59ec9f653b2ac2a0156ca3bcba0a7cf57/docs/rules/no-useless-path-segments.md
-    "import/no-useless-path-segments": ["error", { "commonjs": true }],
+    "import/no-useless-path-segments": ["error", { commonjs: true }],
 
     // https://github.com/import-js/eslint-plugin-import/blob/1012eb951767279ce3b540a4ec4f29236104bb5b/docs/rules/no-relative-packages.md
     "import/no-relative-packages": "off",

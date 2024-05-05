@@ -1,5 +1,5 @@
 module.exports = {
-  "rules": {
+  rules: {
     // https://eslint.org/docs/rules/for-direction
     "for-direction": "off",
 
@@ -58,13 +58,17 @@ module.exports = {
     "no-extra-boolean-cast": "off",
 
     // https://eslint.org/docs/rules/no-extra-parens
-    "no-extra-parens": ["off", "all", {
-      "conditionalAssign": true,
-      "nestedBinaryExpressions": false,
-      "returnAssign": false,
-      "ignoreJSX": "all", // delegate to eslint-plugin-react
-      "enforceForArrowConditionals": false,
-    }],
+    "no-extra-parens": [
+      "off",
+      "all",
+      {
+        conditionalAssign: true,
+        nestedBinaryExpressions: false,
+        returnAssign: false,
+        ignoreJSX: "all", // delegate to eslint-plugin-react
+        enforceForArrowConditionals: false,
+      },
+    ],
 
     // https://eslint.org/docs/latest/rules/no-extra-semi
     "no-extra-semi": "error",
@@ -121,9 +125,12 @@ module.exports = {
     "no-unreachable": "off",
 
     // https://eslint.org/docs/rules/no-unreachable-loop
-    "no-unreachable-loop": ["off", {
-      "ignore": [], // WhileStatement, DoWhileStatement, ForStatement, ForInStatement, ForOfStatement
-    }],
+    "no-unreachable-loop": [
+      "off",
+      {
+        ignore: [], // WhileStatement, DoWhileStatement, ForStatement, ForInStatement, ForOfStatement
+      },
+    ],
 
     // https://eslint.org/docs/rules/no-unsafe-finally
     "no-unsafe-finally": "off",
@@ -132,7 +139,10 @@ module.exports = {
     "no-unsafe-negation": "error",
 
     // https://eslint.org/docs/rules/no-unsafe-optional-chaining
-    "no-unsafe-optional-chaining": ["off", { "disallowArithmeticOperators": true }],
+    "no-unsafe-optional-chaining": [
+      "off",
+      { disallowArithmeticOperators: true },
+    ],
 
     // https://eslint.org/docs/rules/no-unused-private-class-members
     "no-unused-private-class-members": "off",
@@ -153,6 +163,6 @@ module.exports = {
     "valid-jsdoc": "off",
 
     // https://eslint.org/docs/rules/valid-typeof
-    "valid-typeof": ["off", { "requireStringLiterals": true }],
-  }
+    "valid-typeof": ["off", { requireStringLiterals: true }],
+  },
 };

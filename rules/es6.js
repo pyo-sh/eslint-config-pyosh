@@ -1,16 +1,16 @@
 module.exports = {
-  "env": {
-    "es6": true
+  env: {
+    es6: true,
   },
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "ecmaFeatures": {
-      "generators": false,
-      "objectLiteralDuplicateProperties": false
-    }
+  parserOptions: {
+    ecmaVersion: 6,
+    ecmaFeatures: {
+      generators: false,
+      objectLiteralDuplicateProperties: false,
+    },
   },
 
-  "rules": {
+  rules: {
     // https://eslint.org/docs/rules/arrow-body-style
     "arrow-body-style": "off",
 
@@ -18,7 +18,7 @@ module.exports = {
     "arrow-parens": ["error", "always"],
 
     // https://eslint.org/docs/rules/arrow-spacing
-    "arrow-spacing": ["error", { "before": true, "after": true }],
+    "arrow-spacing": ["error", { before: true, after: true }],
 
     // https://eslint.org/docs/latest/rules/constructor-super
     "constructor-super": "off",
@@ -30,9 +30,12 @@ module.exports = {
     "no-class-assign": "off",
 
     // https://eslint.org/docs/rules/no-confusing-arrow
-    "no-confusing-arrow": ["error", {
-      "allowParens": true,
-    }],
+    "no-confusing-arrow": [
+      "error",
+      {
+        allowParens: true,
+      },
+    ],
 
     // https://eslint.org/docs/latest/rules/no-const-assign
     "no-const-assign": "error",
@@ -51,10 +54,13 @@ module.exports = {
     "no-restricted-exports": "off",
 
     // https://eslint.org/docs/rules/no-restricted-imports
-    "no-restricted-imports": ["off", {
-      "paths": [],
-      "patterns": []
-    }],
+    "no-restricted-imports": [
+      "off",
+      {
+        paths: [],
+        patterns: [],
+      },
+    ],
 
     // https://eslint.org/docs/rules/no-this-before-super
     "no-this-before-super": "off",
@@ -66,11 +72,14 @@ module.exports = {
     "no-useless-constructor": "off",
 
     // https://eslint.org/docs/rules/no-useless-rename
-    "no-useless-rename": ["off", {
-      "ignoreDestructuring": false,
-      "ignoreImport": false,
-      "ignoreExport": false,
-    }],
+    "no-useless-rename": [
+      "off",
+      {
+        ignoreDestructuring: false,
+        ignoreImport: false,
+        ignoreExport: false,
+      },
+    ],
 
     // https://eslint.org/docs/latest/rules/no-var
     "no-var": "error",
@@ -79,27 +88,34 @@ module.exports = {
     "object-shorthand": ["error", "always"],
 
     // https://eslint.org/docs/latest/rules/prefer-arrow-callback
-    "prefer-arrow-callback": ["error", {
-      "allowNamedFunctions": false,
-      "allowUnboundThis": true,
-    }],
+    "prefer-arrow-callback": [
+      "error",
+      {
+        allowNamedFunctions: false,
+        allowUnboundThis: true,
+      },
+    ],
 
     // https://eslint.org/docs/latest/rules/prefer-const
     "prefer-const": "error",
 
     // https://eslint.org/docs/rules/prefer-destructuring
-    "prefer-destructuring": ["off", {
-      "VariableDeclarator": {
-        "array": false,
-        "object": true,
+    "prefer-destructuring": [
+      "off",
+      {
+        VariableDeclarator: {
+          array: false,
+          object: true,
+        },
+        AssignmentExpression: {
+          array: true,
+          object: false,
+        },
       },
-      "AssignmentExpression": {
-        "array": true,
-        "object": false,
+      {
+        enforceForRenamedProperties: false,
       },
-    }, {
-      "enforceForRenamedProperties": false,
-    }],
+    ],
 
     // https://eslint.org/docs/rules/prefer-numeric-literals
     "prefer-numeric-literals": "off",
@@ -123,12 +139,15 @@ module.exports = {
     "rest-spread-spacing": ["error", "never"],
 
     // https://eslint.org/docs/rules/sort-imports
-    "sort-imports": ["off", {
-      "ignoreCase": false,
-      "ignoreDeclarationSort": false,
-      "ignoreMemberSort": false,
-      "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
-    }],
+    "sort-imports": [
+      "off",
+      {
+        ignoreCase: false,
+        ignoreDeclarationSort: false,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ["none", "all", "multiple", "single"],
+      },
+    ],
 
     // https://eslint.org/docs/rules/symbol-description
     "symbol-description": "off",
@@ -137,6 +156,6 @@ module.exports = {
     "template-curly-spacing": ["error", "never"],
 
     // https://eslint.org/docs/rules/yield-star-spacing
-    "yield-star-spacing": ["error", "after"]
-  }
+    "yield-star-spacing": ["error", "after"],
+  },
 };
