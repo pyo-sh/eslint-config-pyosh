@@ -1,10 +1,13 @@
 {
   "name": "eslint-config-pyosh",
   "author": "pyo-sh <pygosky@gmail.com>",
-  "version": "3.3.1",
-  "description": "pyo-sh's Typescript eslint coding convention rules",
+  "version": "4.0.0",
+  "description": "pyo-sh's TypeScript ESLint shareable config with Flat Config support (ESLint 9+)",
   "main": "index.js",
   "homepage": "https://github.com/pyo-sh/eslint-config-pyosh",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "test": "eslint ."
   },
@@ -18,30 +21,42 @@
   },
   "keywords": [
     "eslint",
+    "eslint9",
     "eslintconfig",
+    "flat-config",
     "config",
     "typescript",
-    "es2018"
+    "typescript-eslint",
+    "prettier",
+    "code-quality",
+    "linting",
+    "es2021",
+    "javascript",
+    "shareable-config"
   ],
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.8.0",
-    "@typescript-eslint/parser": "^6.8.0",
-    "eslint": "^8.51.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-prettier": "^5.0.1",
-    "prettier": "^3.1.0"
+    "@eslint/js": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^15.0.0",
+    "prettier": "^3.8.1"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.8.0",
-    "@typescript-eslint/parser": "^6.8.0",
-    "prettier": "^3.1.0",
-    "eslint": "^8.51.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-prettier": "^5.0.1"
+    "@eslint/js": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
+    "prettier": "^3.8.1",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^15.0.0"
   },
   "exports": {
     ".": "./index.js",
